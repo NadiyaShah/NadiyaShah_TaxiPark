@@ -277,7 +277,7 @@ h1 span{
 
 /* download section */
 #download{
-    background-image: url('./taxiimages/download-bg.jpg');
+    background-image: url('./taxiimagesfolder/download-bg.jpg');
     width: 100%;
     color: white;
     background-repeat: no-repeat;

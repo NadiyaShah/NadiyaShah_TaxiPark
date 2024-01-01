@@ -19,12 +19,6 @@
     box-shadow: none;
 }
 
-
-
-
-
-
-
 body{
   font-family: 'Roboto', sans-serif;
  }
@@ -93,10 +87,39 @@ body{
     display: block;
     color: black;
 }
+
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    color: black;
+    padding: 10px 20px;
+    }
+    .dropdown-menu .dropdown-submenu {
+    right: 100%;
+    left: auto;
+    color: black;
+    background-color: #ffc107;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    color: black;
+    background-color: #ffc107;
+    } 
+
 h1 span{
     font-size:30px;
 }
 
+@media (max-width:576px){
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
+}   
 
 /* Banner */
 .carousel-item {
@@ -284,7 +307,7 @@ h1 span{
 
 /* download section */
 #download{
-    background-image: url('./taxiimagesfolder/download-bg.jpg');
+    background-image: url('./taxiimages/download-bg.jpg');
     width: 100%;
     color: white;
     background-repeat: no-repeat;
